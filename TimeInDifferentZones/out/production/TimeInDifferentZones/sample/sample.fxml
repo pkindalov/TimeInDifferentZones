@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="272.0" prefWidth="315.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ComboBox fx:id="choiceTimeZone" layoutX="138.0" layoutY="12.0" onAction="#choiceTimeZone" prefHeight="37.0" prefWidth="150.0" promptText="Chose timezone">
+      <items>
+         <FXCollections fx:factory="observableArrayList">
+            <String fx:value="(GMT-12:00) Etc/GMT+12" />
+            <String fx:value="(GMT-11:00) Etc/GMT+11" />
+            <String fx:value="(GMT-10:00) America/Adak" />
+            <String fx:value="(GMT-9:30) Pacific/Marquesas" />
+            <String fx:value="(GMT-9:00) Etc/GMT+9" />
+            <String fx:value="(GMT-9:00) US/Alaska" />
+            <String fx:value="(GMT-8:00) Etc/GMT+8" />
+            <String fx:value="(GMT-7:00) Etc/GMT+7" />
+            <String fx:value="(GMT-6:00) Etc/GMT+6" />
+            <String fx:value="(GMT-5:00) Etc/GMT+5" />
+            <String fx:value="(GMT-4:30) America/Caracas" />
+            <String fx:value="(GMT-4:00) Etc/GMT+4" />
+            <String fx:value="(GMT-3:00) AGT" />
+            <String fx:value="(GMT-3:00) Etc/GMT+3" />
+            <String fx:value="(GMT-2:00) Etc/GMT+2" />
+            <String fx:value="(GMT-1:00) Etc/GMT+1" />
+            <String fx:value="(GMT0:00) Etc/GMT+0/Greenwich" />
+            <String fx:value="(GMT0:00) Etc/Universal/UTC" />
+            <String fx:value="(GMT0:00) UCT" />
+            <String fx:value="(GMT+1:00) CET" />
+            <String fx:value="(GMT+1:00) ECT" />
+            <String fx:value="(GMT+1:00) Etc/GMT-1" />
+            <String fx:value="(GMT+2:00) Etc/GMT-2" />
+            <String fx:value="(GMT+3:00) Etc/GMT-3" />
+            <String fx:value="(GMT+3:07) Asia/Riyadh87" />
+            <String fx:value="(GMT+3:07) Mideast/Riyadh87" />
+            <String fx:value="(GMT+3:30) Asia/Tehran" />
+            <String fx:value="(GMT+3:30) Iran" />
+            <String fx:value="(GMT+4:00) Etc/GMT-4" />
+            <String fx:value="(GMT+4:30) Asia/Kabul" />
+            <String fx:value="(GMT+5:00) Etc/GMT-5" />
+            <String fx:value="(GMT+5:30) Asia/Calcutta" />
+            <String fx:value="(GMT+5:30) Asia/Colombo" />
+            <String fx:value="(GMT+5:30) Asia/Kolkata" />
+            <String fx:value="(GMT+5:30) IST" />
+            <String fx:value="(GMT+5:45) Asia/Katmandu" />
+            <String fx:value="(GMT+6:00) Etc/GMT-6" />
+            <String fx:value="(GMT+6:30) Asia/Rangoon" />
+            <String fx:value="(GMT+6:30) Indian/Cocos" />
+            <String fx:value="(GMT+7:00) Etc/GMT-7" />
+            <String fx:value="(GMT+7:00) VST" />
+            <String fx:value="(GMT+8:00) CTT" />
+            <String fx:value="(GMT+8:00) Etc/GMT-8" />
+            <String fx:value="(GMT+8:45) Australia/Eucla" />
+            <String fx:value="(GMT+9:00) Etc/GMT-9" />
+            <String fx:value="(GMT+9:00) JST" />
+            <String fx:value="(GMT+9:30) ACT" />
+            <String fx:value="(GMT+10:00) AET" />
+            <String fx:value="(GMT+10:00) Etc/GMT-10" />
+            <String fx:value="(GMT+10:30) Australia/LHI" />
+            <String fx:value="(GMT+10:30) Australia/Lord_Howe" />
+            <String fx:value="(GMT+11:00) Etc/GMT-11" />
+            <String fx:value="(GMT+11:00) SST" />
+            <String fx:value="(GMT+11:30) Pacific/Norfolk" />
+            <String fx:value="(GMT+12:00) Etc/GMT-12" />
+            <String fx:value="(GMT+12:45) Pacific/Chatham" />
+            <String fx:value="(GMT+13:00) Etc/GMT-13" />
+            <String fx:value="(GMT+13:00) MIT" />
+            <String fx:value="(GMT+14:00) Etc/GMT-14" />
+
+         </FXCollections>
+      </items>
+      </ComboBox>
+      <TextArea fx:id="result" layoutX="25.0" layoutY="102.0" prefHeight="78.0" prefWidth="266.0" wrapText="true">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font></TextArea>
+      <TextArea fx:id="userTime" layoutX="25.0" layoutY="12.0" prefHeight="0.0" prefWidth="100.0" promptText="(GMT+2:00)" />
+      <Button fx:id="btnCheck" layoutX="25.0" layoutY="55.0" mnemonicParsing="false" onAction="#userTimeZone" prefHeight="37.0" prefWidth="266.0" text="Check" />
+   </children>
+</AnchorPane>
