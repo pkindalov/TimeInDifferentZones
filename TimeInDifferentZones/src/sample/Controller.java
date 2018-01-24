@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
@@ -13,6 +14,7 @@ public class Controller {
     public TextArea result;
     public TextArea userTime;
     public Button btnCheck;
+    public Button btnExit;
 
 
     public void choiceTimeZone(ActionEvent actionEvent) {
@@ -50,7 +52,10 @@ public class Controller {
     }
 
 
-    
+    public void exitProgram(ActionEvent actionEvent) {
+        Platform.exit();
+        System.exit(0);
+    }
 }
 
 

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TimeInDifferentZones:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TimeInDifferentZones_jar</output-path>
+    <root id="archive" name="TimeInDifferentZones.jar">
+      <element id="module-output" name="TimeInDifferentZones" />
+    </root>
+  </artifact>
+</component>
